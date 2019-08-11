@@ -1,0 +1,19 @@
+---
+layout: default
+---
+{%- include header.html -%}
+
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				<p>{{- page.subtitle -}}</p>
+			</header>
+			<img class="image featured" src="../../../../{{- page.photo -}}"/>
+			{{- content -}}
+	  </div>
+	</article>
+</div>
