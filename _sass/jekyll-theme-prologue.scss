@@ -445,12 +445,13 @@
 		@include vendor('background-image', ('linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15))', 'url("images/overlay.png")'));
 		@include vendor('transition', 'background-color 0.35s ease-in-out');
 
-		&:hover {
-			background-color: #9ececc;
+		&:hover,
+		&:focus {
+			background-color: lighten(#8CBA51, 20%);
 		}
 
 		&:active {
-			background-color: #7eaeac;
+			opacity: 0.5;
 		}
 	}
 
@@ -1123,5 +1124,52 @@
 		img {
 			width: 30%;
 			height: 30%;
+		}
+	}
+
+	.contacts__button {
+		border-radius: 5px;
+		margin: 3px;
+		background-color: #8CBA51;
+		color: darken(#8CBA51, 40%);
+		width: 40px;
+		height: 40px;
+		font-size: 0;
+		background-position: center;
+		background-repeat: no-repeat;
+	
+		&--mail {
+			width: 150px;
+			font-size: inherit;
+			cursor: default;
+			user-select: contain;
+		}
+	
+		&--insta {
+			background-image: url("../images/insta-icon.svg");
+		}
+	
+		&--habr {
+			background-size: cover;
+			background-image: url("../images/habr-icon.svg");
+		}
+	
+		&--git {
+			background-image: url("../images/github-icon.svg");
+		}
+	
+		&--tg {
+			background-image: url("../images/telegram-icon.svg");
+		}
+	
+		&:hover,
+		&:focus {
+			outline: none;
+			opacity: 0.7;
+			background-color: lighten(#8CBA51, 20%);
+		}
+	
+		&:active {
+			opacity: 0.5;
 		}
 	}
