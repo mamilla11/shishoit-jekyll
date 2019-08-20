@@ -16,7 +16,6 @@ module Jekyll
       self.data['next_pic'] = next_pic
       self.data['title'] = title
       self.data['description'] = description
-      self.data['comments'] = true
       self.data['hide'] = true
     end
   end
