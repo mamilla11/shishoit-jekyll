@@ -10,18 +10,20 @@ layout: default
 	{%- endif -%}
 	<!-- Posts List -->
 	{%- for _post in _posts -%}
-		{%- capture _title -%}
-			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
-		{%- endcapture -%}
-		{%- capture _subtitle -%}{{- _post.subtitle }}{%- endcapture -%}
-		{%- capture _excerpt -%}
-		<div class="post-preview">
-			{% if _post.photo -%}<img src="{{- _post.photo }}"/> | {% endif %}
-			<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>
-	  </div>
-		{%- endcapture -%}
-		{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
-		{%- assign _content = _excerpt | append: _link -%}
-		{%- include section.html title=_title subtitle=_subtitle content=_content -%}
+	  {%- if _post.layout == 'post' -%}
+			{%- capture _title -%}
+				<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
+			{%- endcapture -%}
+			{%- capture _subtitle -%}{{- _post.subtitle }}{%- endcapture -%}
+			{%- capture _excerpt -%}
+			<div class="post-preview">
+				{% if _post.photo -%}<img src="{{- _post.photo }}"/> | {% endif %}
+				<p>{{- _post.excerpt | strip_html | truncatewords: 100 -}}</p>
+			</div>
+			{%- endcapture -%}
+			{%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">read more</a>{%- endcapture -%}
+			{%- assign _content = _excerpt | append: _link -%}
+			{%- include section.html title=_title subtitle=_subtitle content=_content -%}
+		{%- endif -%}
 	{%- endfor -%}
 </div>
