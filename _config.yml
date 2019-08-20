@@ -36,7 +36,7 @@ description: >-
   SHISHOIT.IO - душевная разработка электроники на заказ и не только.
 author: shishoit.io
 email: n_lazareva@mail.ru
-avatar: assets/images/logo_shishoit.svg
+avatar: assets/images/icons/logo_shishoit.svg
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -49,4 +49,4 @@ collections: [sections]
 #Jekyll-Photo-Gallery Settings
 exiftag:
  sources:
-   - images/photography #Set to location of photos
+   - assets/images/gallery/photography #Set to location of photos

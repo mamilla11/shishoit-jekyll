@@ -4,11 +4,11 @@ layout: default
 {%- include header.html -%}
 
 <!-- Use CSS to set the width etc. of the gallery -->
-<div id="main" role="main" style="width: 70%; margin: auto; margin-top: 30px;">
+<div id="main">
     <div class="wrap">
         <div class="page-feature">
             <div class="page-image">
-                <img src="{{ site.url }}/images/headers/header.jpg" class="page-feature-image" alt="{{ page.title }}">
+                <img src="{{ site.url }}/assets/images/gallery/headers/header.jpg" class="page-feature-image" alt="{{ page.title }}">
                 {% if page.image.credit %}{% include image-credit.html %}{% endif %}
             </div><!-- /.page-image -->
         </div><!-- /.page-feature -->
@@ -20,6 +20,3 @@ layout: default
         </div><!-- /.archive-wrap -->
     </div><!-- /.wrap -->
 </div><!-- /#main -->
-
-<script src="{{ site.url }}/js/vendor/jquery-1.9.1.min.js"></script>
-<script src="{{ site.url }}/js/plugins/jquery.justifiedGallery.min.js"></script>

@@ -1,8 +1,8 @@
 ---
 title: Галерея
-layout: album
+layout: "photoIndex"
 icon: fa-th
 order: 3
 ---
 
-{% includeGallery UsaSommer2015 %}
+<!-- {% includeGallery UsaSommer2015 %} -->
