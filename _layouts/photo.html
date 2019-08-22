@@ -13,13 +13,13 @@ layout: default
       <meta itemprop="isFamilyFriendly" content="true"/>
       <meta itemprop="url" content="{{ site.url }}{{ page.url }}"/>
       <meta itemprop="name" content="{{page.title}}"/>
-      <meta itemprop="image" content="{{ site.url }}/assets/images/gallery/photography/{{ page.photo_url }}.jpg"/>
-      <meta itemprop="thumbnailUrl" content="{{ site.url }}/assets/images/gallery/photography/thumbnails/{{ page.photo_url }}.jpg"/>
+      <meta itemprop="image" content="{{ site.url }}/assets/images/gallery/photography/{{ page.photo_url }}.jpeg"/>
+      <meta itemprop="thumbnailUrl" content="{{ site.url }}/assets/images/gallery/photography/thumbnails/{{ page.photo_url }}.jpeg"/>
       <meta itemprop="description" content="{{page.description}}"/>
       <!-- todo: content location -->
 
       <div id="photo" style="text-align: center;">
-        <img id="picture" style="max-height:100%; max-width:100%;" src="{{ site.url }}/assets/images/gallery/photography/{{ page.photo_url }}.jpg" class="entry-feature-image"
+        <img id="picture" style="max-height:100%; max-width:100%;" src="{{ site.url }}/assets/images/gallery/photography/{{ page.photo_url }}.jpeg" class="entry-feature-image"
              alt="{{ page.title }}">
       </div>
       <div>
@@ -38,6 +38,7 @@ layout: default
             {{page.description}}
             {% endif %}
           </div>
+          <a href="{{- _post.url | absolute_url -}}" class="button">Вернуться в альбом</a>
         </div>
       </div>
     </div>

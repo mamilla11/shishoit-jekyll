@@ -5,4 +5,4 @@ order: 3
 categories: jekyll photo-gallery
 ---
 
-{% includeGallery UsaSommer2015 %}
+<!-- {% includeGallery UsaSommer2015 %} -->

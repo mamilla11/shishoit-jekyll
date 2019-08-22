@@ -5,4 +5,4 @@ order: 1
 categories: jekyll photo-gallery
 ---
 
-{% includeGallery UsaSommer2015 %}
+{% includeGallery swallow %}

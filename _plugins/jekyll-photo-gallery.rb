@@ -69,31 +69,6 @@ module Jekyll
         }
       end
       site.data['photoSlugs'] = photoSlugs
-
-      #Create a array containing all countries
-      countryArray = Array.new
-      photos.each do |photo,details|
-        [nil, *details, nil].each_cons(3){|prev, curr, nxt|
-          photoCountry = curr["country"]
-          countryArray.push(photoCountry)
-        }
-      end
-      countryArray = countryArray.uniq
-
-      countryArray.each do |name|
-        photosPerCountry = Array.new
-        countrySlug = name.strip.gsub(' ', '-').gsub(/[^\w-]/, '')
-        photos.each do |photo, details|
-          [nil, *details, nil].each_cons(3){|prev, curr, nxt|
-            if(curr["country"] == name)
-              photosPerCountry.push(curr)
-            end
-          }
-        end
-
-        #Make page
-        site.pages << PhotoList.new(site, site.source, File.join('photography', countrySlug), photosPerCountry, name)
-      end
     end
   end
 end
@@ -118,7 +93,7 @@ module Jekyll
           if(curr["album"] == text.strip)
             @result = @result+'<div itemscope itemtype="http://schema.org/Photograph">
                                       <a itemprop="image" class="swipebox" title="'+curr["title"]+'" href="/photography/'+curr["title"].strip.gsub(' ', '-').gsub(/[^\w-]/, '')+'/">
-                                        <img alt="'+curr["title"]+'" itemprop="thumbnailUrl" src="/assets/images/gallery/photography/thumbnails/'+curr["img"]+'.jpg"/>
+                                        <img alt="'+curr["title"]+'" itemprop="thumbnailUrl" src="/assets/images/gallery/photography/thumbnails/'+curr["img"]+'.jpeg"/>
                                         <meta itemprop="name" content="'+curr["title"]+'" />
                                         <meta itemprop="isFamilyFriendly" content="true" />
                                         <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
