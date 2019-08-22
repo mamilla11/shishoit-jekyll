@@ -1,4 +1,10 @@
 photos:
+    - title: Dragonfly
+      img: dragon-1
+      album: dragon
+    - title: Dragonfly
+      img: dragon-2
+      album: dragon
     - title: Bee Kit
       img: bee-1
       album: bee

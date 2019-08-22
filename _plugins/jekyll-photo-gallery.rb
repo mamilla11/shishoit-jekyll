@@ -96,11 +96,6 @@ module Jekyll
                                         <img alt="'+curr["title"]+'" itemprop="thumbnailUrl" src="/assets/images/gallery/photography/thumbnails/'+curr["img"]+'.jpeg"/>
                                         <meta itemprop="name" content="'+curr["title"]+'" />
                                         <meta itemprop="isFamilyFriendly" content="true" />
-                                        <div itemprop="creator" itemscope itemtype="http://schema.org/Person">
-                                          <div itemprop="sameAs" href="http://theowinter.ch/about">
-                                            <meta itemprop="name" content="Theo Winter"/>
-                                          </div>
-                                        </div>
                                       </a>
                                     </div>'
           end
