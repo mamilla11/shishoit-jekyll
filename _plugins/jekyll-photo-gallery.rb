@@ -28,7 +28,7 @@ module Jekyll
       @name = 'index.html'
 
       self.process(@name)
-      self.read_yaml(File.join(base, '_layouts'), 'photoIndex.html')
+      self.read_yaml(File.join(base, '_layouts'), 'photos.html')
       self.data['photolist'] = photolist
       self.data['title'] = title
       self.data['hide'] = true

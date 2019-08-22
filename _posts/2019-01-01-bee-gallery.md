@@ -1,7 +1,7 @@
 ---
 layout: album
-title:  "A post with an embedded album"
-date:   2016-06-18 10:50:10 +0200
+title:  Bee
+order: 2
 categories: jekyll photo-gallery
 ---
 

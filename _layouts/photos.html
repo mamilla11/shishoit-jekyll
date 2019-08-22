@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign _posts = site.posts | where: "layout", "album" | sort: 'order' | reverse -%}
+{%- include header.html scrolly_nav=_posts -%}
+
+<div id="main">
+    {%- for _post in _posts -%}
+        {%- capture _title -%}
+			<a href="{{- _post.url | absolute_url -}}">{{- _post.title -}}</a>
+        {%- endcapture -%}
+        {%- capture _link -%}<a href="{{- _post.url | absolute_url -}}">more</a>{%- endcapture -%}
+        {%- assign _content = _excerpt | append: _link -%}
+        {%- include section.html title=_title content=_content -%}
+    {%- endfor -%}
+</div>
