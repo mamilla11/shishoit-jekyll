@@ -1,0 +1,13 @@
+.portfolio__link {
+  overflow: hidden;
+
+  img {
+    transition: transform 0.5s ease;
+  }
+  
+  &:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+}

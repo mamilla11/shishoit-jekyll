@@ -1,21 +1,123 @@
 ---
-title: Контакты
+title: Contacts
 icon: fa-envelope
 order: 4
 ---
 
-<a href="mailto:dm@shishoit.io" aria-label="Адрес электронной почты">dm@shishoit.io</a>
-<p>+7 (905) 250 04 60</p>
+<div>
+  <a href="mailto:dm@shishoit.io" aria-label="Адрес электронной почты">dm@shishoit.io</a>
+</div>
+<div>
+  <a href="tel:+79052500460">+7 (905) 250 04 60</a>
+</div>
+<table class="contacts__links">
+  <tr class="contacts__row">
+    <td class="contacts__cell">
+      <div class="contacts__avatar contacts__avatar--ana"></div>
+    </td>
+    <td class="contacts__cell"></td>
+    <td class="contacts__cell">
+      <div class="contacts__avatar contacts__avatar--dima"></div>
+    </td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--tg" 
+          href="https://t.me/anashi_t" aria-label="Anastasiia's Telegram link">
+        Anastasiia
+      </a>
+    </td>
+    <td class="contacts__cell">Telegram</td>
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--tg" href="https://t.me/dmitriy_shi"
+          aria-label="Dmitrii's Telegram link">
+        Dmitrii
+      </a>
+    </td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell"></td>
+    <td class="contacts__cell">TG-Channel</td>
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--tg"
+          href="https://t.me/all_these_things" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Dmitrii on Telegram">
+        TG-Channel
+      </a>
+    </td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--insta"
+          href="https://www.instagram.com/__anashi__/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Anastasiia on Instagram">
+        Instagram
+      </a>
+    </td>
+    <td class="contacts__cell">Instagram</td>
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--insta"
+          href="https://www.instagram.com/dimonfofr1/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Dmitrii on Instagram">
+        Instagram
+      </a>
+    </td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--habr"
+          href="https://habr.com/users/ana_lazareva/posts/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Anastasiia on Habrahabr">
+        Habrahabr
+      </a>
+    </td>
+    <td class="contacts__cell">Habrahabr</td>
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--habr"
+          href="https://habr.com/users/dimonfofr/posts/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Dmitrii on Habrahabr">
+        Habrahabr
+      </a>
+    </td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--git"
+          href="https://github.com/mamilla11" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Anastasiia on GitHub">
+        GitHub
+      </a>
+    </td>
+    <td class="contacts__cell">GitHub</td>
+    <td class="contacts__cell"></td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--link"
+          href="https://www.linkedin.com/in/anastasiia-shishova-76534096/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Anastasiia on LinkedIn">
+          LinkedIn
+      </a>
+    </td>
+    <td class="contacts__cell">LinkedIn</td>
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--link"
+          href="https://www.linkedin.com/in/dm-sh/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Dmitrii on LinkedIn">
+        LinkedIn
+      </a>
+    </td>
+  </tr>
+  <tr class="contacts__row">
+    <td class="contacts__cell"></td>
+    <td class="contacts__cell">Hackster</td>
+    <td class="contacts__cell">
+      <a class="button contacts__button contacts__button--hack"
+          href="https://www.hackster.io/dm_sh/" rel="noopener noreferrer"
+          target="_blank" aria-label="Follow Dmitrii on Hackster">
+          Hackster
+      </a>
+    </td>
+  </tr>
+</table>
 
-<form method="post" action="https://formspree.io/{{ site.email }}">
-  <div class="row">
-    <div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Имя" /></div>
-    <div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Почта" /></div>
-    <div class="12u$">
-      <textarea name="message" placeholder="Сообщение"></textarea>
-    </div>
-    <div class="12u$">
-      <input type="submit" value="Отправить" />
-    </div>
-  </div>
-</form>

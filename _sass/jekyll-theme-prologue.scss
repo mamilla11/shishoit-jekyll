@@ -1,6 +1,9 @@
 @import 'libs/vars';
 @import 'libs/functions';
 @import 'libs/mixins';
+@import 'libs/swiper';
+@import 'intro.scss';
+@import 'portfolio.scss';
 
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -1161,11 +1164,53 @@ $on-laptop:        800px;
 		}
 	}
 
+	.page-content {
+    padding: $spacing-unit 0;
+  }
+
+	.post-title {
+		font-size: 42px;
+		letter-spacing: -1px;
+		line-height: 1;
+
+		@include media-query($on-laptop) {
+			font-size: 36px;
+		}
+	}
+
+	.contacts__links {
+		margin-top: 60px;
+
+	}
+
+	.contacts__cell {
+		border: 1px solid lighten(#888888, 30%);
+		text-align: center;
+	}
+
+	.contacts__avatar {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position: center;
+		margin: 0 auto;
+		border: 1px solid lighten(#888888, 30%);
+
+		&--ana {
+			background-image: url("../images/avatar-ana.jpg");
+		}
+
+		&--dima {
+			background-image: url("../images/avatar-dima.jpg");
+		}
+	}
+
 	.contacts__button {
 		border-radius: 5px;
 		margin: 3px;
-		background-color: #8CBA51;
-		color: darken(#8CBA51, 40%);
+		background-color: rgba(128, 136, 144, 0.5);
 		width: 40px;
 		height: 40px;
 		font-size: 0;
@@ -1195,6 +1240,16 @@ $on-laptop:        800px;
 		&--tg {
 			background-image: url("../images/icons/telegram-icon.svg");
 		}
+
+		&--link {
+			background-size: contain;
+			background-image: url("../images/icons/linkedin.svg");
+		}
+
+		&--hack {
+			background-size: contain;
+			background-image: url("../images/icons/hackster.svg");
+		}
 	
 		&:hover,
 		&:focus {
@@ -1205,19 +1260,5 @@ $on-laptop:        800px;
 	
 		&:active {
 			opacity: 0.5;
-		}
-	}
-
-	.page-content {
-    padding: $spacing-unit 0;
-  }
-
-	.post-title {
-		font-size: 42px;
-		letter-spacing: -1px;
-		line-height: 1;
-
-		@include media-query($on-laptop) {
-			font-size: 36px;
 		}
 	}

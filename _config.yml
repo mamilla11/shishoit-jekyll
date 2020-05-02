@@ -31,7 +31,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: SHISHOIT
-subtitle: Уютные встраивания
+subtitle: electronics design
 description: >- 
   SHISHOIT.IO - душевная разработка электроники на заказ и не только.
 author: shishoit.io
