@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+	{%- include head.html -%}
+	<body>
+    {%- include header.html -%}
+		<div id="main">
+      <!-- Page -->
+      <article class="shade-two">
+        <div class="container">
+          <div class="previews"></div>
+        </div>
+      </article>
+    </div>
+    {%- include footer.html -%}
+    <template id="preview">
+      <a class="preview">
+        <img src="" alt="" width="" height="">
+        <p></p>
+      </a>
+    </template>
+    <script src="{{- 'assets/js/gallery_data.js' | relative_url -}}"></script>
+    <script src="{{- 'assets/js/previews.js' | relative_url -}}"></script>
+	</body>
+</html>

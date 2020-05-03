@@ -33,7 +33,7 @@
 title: SHISHOIT
 subtitle: electronics design
 description: >- 
-  SHISHOIT.IO - душевная разработка электроники на заказ и не только.
+  SHISHOIT.IO - Electronics Design.
 author: shishoit.io
 email: n_lazareva@mail.ru
 avatar: assets/images/icons/logo_shishoit.svg
@@ -45,8 +45,3 @@ url: "http://shishoit.io" # the base hostname & protocol for your site
 # The following settings are NECESSARY for the Prologue theme to run:
 theme: jekyll-theme-prologue
 collections: [sections]
-
-#Jekyll-Photo-Gallery Settings
-exiftag:
- sources:
-   - assets/images/gallery/photography #Set to location of photos
