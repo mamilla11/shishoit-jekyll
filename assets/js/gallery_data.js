@@ -4,12 +4,17 @@
   window.gallery_data = [
     {
       title: "Bee",
-      url: "images/gallery/bee-1.jpeg",
+      url: "images/bee/bee-1.jpg",
       description: null
     },
     {
       title: "Bee",
-      url: "images/gallery/bee-2.jpeg",
+      url: "images/bee/bee-2.jpeg",
+      description: null
+    },
+    {
+      title: "Bee",
+      url: "images/bee/bee-4.jpeg",
       description: null
     },
     {

@@ -1152,7 +1152,6 @@ $on-laptop:        800px;
 					}
 				}
 			}
-
 	}
 
 	.post-preview {
@@ -1262,5 +1261,16 @@ $on-laptop:        800px;
 	
 		&:active {
 			opacity: 0.5;
+		}
+	}
+
+	.video {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		iframe {
+			width: 100%;
+			height: 315px;
 		}
 	}
