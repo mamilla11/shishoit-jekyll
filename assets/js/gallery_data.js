@@ -49,17 +49,17 @@
     },
     {
       title: "Swallow",
-      url: "images/gallery/swallow-1.jpeg",
+      url: "images/swallow/swallow-1.jpeg",
       description: null
     },
     {
       title: "Swallow",
-      url: "images/gallery/swallow-2.jpeg",
+      url: "images/swallow/swallow-2.jpeg",
       description: null
     },
     {
       title: "Swallow",
-      url: "images/gallery/swallow-3.jpeg",
+      url: "images/swallow/swallow-3.jpeg",
       description: null
     }
   ];

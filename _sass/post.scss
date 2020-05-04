@@ -1,0 +1,31 @@
+.post {
+  p {
+    margin-bottom: 0;
+    text-align: justify;
+  }
+}
+
+.post__translate {
+  margin-top: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px dashed lighten(#888888, 30%);
+}
+
+.post-swiper {
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+}
+
+.post__slide {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  img {
+    height: auto;
+    max-height: 60vh;
+    width: auto;
+    max-width: 99%;
+  }
+}

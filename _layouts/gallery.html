@@ -1,24 +1,32 @@
-<!DOCTYPE HTML>
-<html>
-	{%- include head.html -%}
-	<body>
-    {%- include header.html -%}
-		<div id="main">
-      <!-- Page -->
-      <article class="shade-two">
-        <div class="container">
-          <div class="previews"></div>
-        </div>
-      </article>
+---
+layout: default
+---
+{%- include header.html -%}
+<div id="main">
+  <!-- Page -->
+  <article class="shade-two">
+    <div class="container">
+      <div class="previews"></div>
     </div>
-    {%- include footer.html -%}
-    <template id="preview">
-      <a class="preview">
-        <img src="" alt="" width="" height="">
-        <p></p>
-      </a>
-    </template>
-    <script src="{{- 'assets/js/gallery_data.js' | relative_url -}}"></script>
-    <script src="{{- 'assets/js/previews.js' | relative_url -}}"></script>
-	</body>
-</html>
+  </article>
+  <section class="picture overlay hidden modal-open" tabindex="0">
+    <div class="picture__preview">
+      <div class="picture__img">
+        <img src="assets/images/gallery/bee-1.jpeg" alt="" width="" height="">
+        <div class="picture__nav">
+          <button type="button" class="picture__button picture__button--prev">Prev</button>
+          <button type="button" class="picture__button picture__button--next">Next</button>
+        </div>
+        <button type="reset" class="picture__button picture__button--close">Close</button>
+      </div>
+    </div>
+  </section>
+</div>
+<template id="preview">
+  <a class="preview">
+    <img src="" alt="" width="" height="">
+    <p></p>
+  </a>
+</template>
+<script src="{{- 'assets/js/gallery_data.js' | relative_url -}}"></script>
+<script src="{{- 'assets/js/gallery.js' | relative_url -}}"></script>
